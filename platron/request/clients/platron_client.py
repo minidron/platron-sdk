@@ -1,7 +1,8 @@
 import abc
 
 
-class PlatronClient(metaclass=abc.ABCMeta):
+class PlatronClient(object):
+    __metaclass__ = abc.ABCMeta
 
     @abc.abstractmethod
     def __init__(self, merchant, secret_key):

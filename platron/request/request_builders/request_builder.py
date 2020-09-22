@@ -1,8 +1,10 @@
+# -*- coding: utf-8 -*-
 import abc
 from platron.sdk_exception import SdkException
 
 
-class RequestBuilder(metaclass=abc.ABCMeta):
+class RequestBuilder(object):
+    __metaclass__ = abc.ABCMeta
 
     PLATRON_URL = 'https://www.platron.ru/'
 
